@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron">
+        <div>
+          <img src="img/profile.jpg" alt="profile picture" width="100" />
+        </div>
+        <div>
+          <h1>Halo saya Reyhan</h1>
+          <p>Saya adalah seorang mahasiswa Insitut Teknologi Sumatera</p>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#tentang">Tentang saya</a></li>
+          <li><a href="#pengalaman">Pengalaman</a></li>
+          <li><a href="#hubungi">Hubungi saya</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article id="tentang">
+        <h2>Tentang saya</h2>
+        <div class="mainContent">
+          <div class="mainContentP">
+            <p>
+              Nama saya Reyhan Gandaresta, sekarang saya sedang belajar HTML.
+              Saya sangat suka dengan teknologi dan saya ingin menjadi seorang
+              programmer zaman now.
+            </p>
+          </div>
+
+          <figure>
+            <iframe
+              width="320"
+              height="200"
+              src="https://www.youtube.com/embed/yQHwny_6mI4"
+              title="YouTube video player"
+              allowfullscreen
+            ></iframe>
+            <figcaption>Video saya</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article id="pengalaman">
+        <h2>Pengalaman</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2">No</th>
+              <th rowspan="2">Deskripsi</th>
+              <th colspan="2">Tahun</th>
+            </tr>
+            <tr>
+              <th>Mulai</th>
+              <th>Selesai</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Juara 1 OSN Matematika Tingkat Kabupaten</td>
+              <td>2019</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Juara 1 LKBB Putra Tingkat Provinsi</td>
+              <td>2019</td>
+              <td>2019</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article id="hubungi">
+        <h2>Hubungi saya</h2>
+        <form action="get">
+          <div>
+            <label for="nama">Nama : </label>
+            <input type="text" name="nama" id="nama" /><br /><br />
+          </div>
+          <div>
+            <p>Jenis Kelamin</p>
+            <br />
+            <input
+              type="radio"
+              name="jenis_kelamin"
+              value="laki-laki"
+              id="laki"
+            />
+            <label for="laki">Laki-Laki</label><br />
+            <input
+              type="radio"
+              name="jenis_kelamin"
+              value="perempuan"
+              id="perempuan"
+            />
+            <label for="perempuan">Perempuan</label><br /><br />
+          </div>
+          <div>
+            <label
+              >Pilih media sosial jika ingin berinteraksi dengan saya</label
+            >
+            <br />
+            <input
+              type="checkbox"
+              name="media_sosial"
+              value="facebook"
+              id="facebook"
+            />
+            <label for="facebook">Facebook</label><br />
+            <input
+              type="checkbox"
+              name="media_sosial"
+              value="twitter"
+              id="twitter"
+            />
+            <label for="twitter">Twitter</label><br />
+            <input
+              type="checkbox"
+              name="media_sosial"
+              value="instagram"
+              id="instagram"
+            />
+            <label for="instagram">Instagram</label><br /><br />
+          </div>
+          <div>
+            <label for="pesan">Pesan : </label>
+            <br />
+            <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+
+            <br />
+          </div>
+          <input type="submit" value="Kirim" />
+        </form>
+      </article>
+    </main>
+    <footer>
+      <p>
+        &copy; 2022
+        <a href="https://instagram.com/reyhangandaresta_" target="_blank">
+          Reyhan
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
